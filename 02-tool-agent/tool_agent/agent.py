@@ -14,7 +14,7 @@ def get_current_time() -> dict:
 
 root_agent = Agent(
     name="tool_agent",
-    model="gemini-2.0-flash",
+    model="gemini-2.5-flash",
     description="Tool Agent",
     instruction="""
     You are a helpful assistant that can use the following tools:
