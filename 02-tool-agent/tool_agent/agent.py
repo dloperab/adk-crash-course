@@ -12,6 +12,7 @@ def get_current_time() -> dict:
         "current_time": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
     }
 
+
 root_agent = Agent(
     name="tool_agent",
     model="gemini-2.5-flash",

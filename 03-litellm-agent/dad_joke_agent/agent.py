@@ -10,11 +10,12 @@ model = LiteLlm(
 )
 
 root_agent = Agent(
-    model='gemini-2.5-flash',
-    name='root_agent',
-    description='A helpful assistant for user questions.',
-    instruction='Answer user questions to the best of your knowledge',
+    model="gemini-2.5-flash",
+    name="root_agent",
+    description="A helpful assistant for user questions.",
+    instruction="Answer user questions to the best of your knowledge",
 )
+
 
 def get_dad_joke():
     jokes = [
@@ -24,6 +25,7 @@ def get_dad_joke():
         "Why did the scarecrow win an award? Because he was outstanding in his field!",
     ]
     return random.choice(jokes)
+
 
 root_agent = Agent(
     name="dad_joke_agent",

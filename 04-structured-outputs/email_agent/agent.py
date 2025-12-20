@@ -2,6 +2,7 @@ from pydantic import BaseModel, Field
 
 from google.adk.agents.llm_agent import Agent
 
+
 class EmailContent(BaseModel):
     subject: str = Field(
         description="The subject line of the email. Should be concise and descriptive."
@@ -9,6 +10,7 @@ class EmailContent(BaseModel):
     body: str = Field(
         description="The main content of the email. Should be well-formatted with proper greeting, paragraphs, and signature."
     )
+
 
 root_agent = Agent(
     name="email_agent",
